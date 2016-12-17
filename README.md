@@ -28,11 +28,15 @@ Import as *Existing Maven Project* and run it as *Spring Boot App*.
 - Run the application and go on http://localhost:8080/
 - Use the following urls to invoke controllers methods and see the interactions
   with the database:
-    * `http://localhost:8080/admin/save/?name=[name]&lastname=[lastname]&age=[age]&profession=[profession]`: create a new person.
+    * `http://localhost:8080/person/create/?name=[name]&lastname=[lastname]&age=[age]&profession=[profession]`: create a new person.
     
-    * `http://localhost:8080/person/[id]`:  get person by id.
+    * `http://localhost:8080/person/[id]`: get a person by id.
     
     * `http://localhost:8080/person/all`:  get a list of people.
+    
+    * `http://localhost:8080/person/update`: update a person(POST method).
+    
+    * `http://localhost:8080/person/delete/?id=[id]`: delete a person.
     
    
     
